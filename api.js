@@ -84,7 +84,7 @@ function VarinodeApi() {
         .setAppSecret(config.appSecret)
         .setAppPrivateSecret(config.appPrivateSecret);
 
-        //if (!config.debug) log.level(100000); // cheesy hack; no logs if no debug requested
+        if (config.debug) log.level(10); 
         if (config.fileUpload !== undefined) {
             this.setFileUploadSupport(config.fileUpload);
         }
