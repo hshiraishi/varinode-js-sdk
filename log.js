@@ -19,10 +19,10 @@ var bunyan = require('bunyan');
 var log = bunyan.createLogger({
     name: 'varinode-api',
     streams: [
-            {
+            /*{
                 level: 'info',
-                stream: process.stderr
-            },
+                stream: process.stdout
+            },*/
             {
                 level: 'trace',
                 path: '/tmp/varinode.out'

@@ -12,9 +12,9 @@ Load and configure the library
 
 
 
-	var varinode = require("varinode-js-sdk");
+	var Varinode = require("varinode-js-sdk");
 	
-	varinode.configure({
+	Varinode.configure({
     	appKey: varinode-app-key,
         appSecret: varinode-app-secret,
     	appPrivateSecret: varinode-app-private-secret
@@ -48,7 +48,7 @@ Example:
 
 Logging
 -------
-For debugging, we integrate the excellent Bunyan logger, which outputs to a file (/tmp/varinode.out). 
+For debugging, we integrate the excellent Bunyan logger, which outputs to a file (/tmp/varinode.out). Turned off by default. To activate, add `debug: true` to your configuration object.
 
 
 Release notes
