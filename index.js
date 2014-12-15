@@ -15,6 +15,7 @@
  */
 
 var VarinodeApi = require('./api.js');
+var ApiCache = require('./api.cache.js');
 
 var Varinode = {
     /**
@@ -65,7 +66,13 @@ var Varinode = {
         } else {
             throw new Error("Varinode API called, but has not been configured.");
         }
+    },
+
+    isConfigured : function () {
+        return VarinodeApi.isConfigured();
     }
 };
+
+Varinode.ApiCache = ApiCache;
 
 module.exports = Varinode;
