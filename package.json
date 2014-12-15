@@ -22,12 +22,12 @@
   "homepage": "https://github.com/mjk/varinode-js-sdk",
   "dependencies": {
     "request": "^2.42.0",
-    "md5": "^1.0.0"
+    "MD5": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
     "chai-as-promised": "^4.1.1",
-    "md5": "^1.0.0",
+    "MD5": "^1.0.0",
     "mocha": "^1.21.4",
     "request": "^2.42.0",
     "sinon": "^1.10.3"
