@@ -53,4 +53,5 @@ For debugging, we integrate the excellent Bunyan logger, which outputs to a file
 
 Release notes
 -----
+ - 0.1.0 - functional SDK port, with no supporting objects
  - 0.0.0 - initial commit
