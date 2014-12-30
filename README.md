@@ -209,4 +209,6 @@ Congratulations! You just bought a sock.
 
 Release notes
 -----
+ - 0.1.1 - initial merge of object model
+ - 0.1.0 - SDK port complete
  - 0.0.0 - initial commit
