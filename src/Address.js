@@ -52,15 +52,21 @@ function updateAddressOnSuccess (response) {
  * @memberof Address
  */
 Address.prototype.save = function(isDefault) {
+    var self = this;
     var params = {
-        'address_is_default' : !!isDefault || this.address_is_default,
-        'address' : this
+        'address_is_default' : !!isDefault || self.address_is_default,
+        'address' : self
     };
-    if (this.customer_id) {
-        params.address_customer_id = this.customer_id;
+    if (self.customer_id) {
+        params.address_customer_id = self.customer_id;
     }
 
-    return Varinode.api("addresses.add", params);
+    return Varinode.api("addresses.add", params).then(function(response) {
+        if (response && response.status == 'complete') {
+            self.address_id = response.address_id;
+            return response.address;
+        }
+    });
 };
 
 /**

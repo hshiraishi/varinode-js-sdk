@@ -3,6 +3,7 @@
  * @license Apache-2.0
  */
 
+var Q = require('q');
 var extend = require('extend'); 
 var Varinode = require('./api.js'); 
 
