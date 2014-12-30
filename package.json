@@ -21,13 +21,16 @@
   },
   "homepage": "https://github.com/mjk/varinode-js-sdk",
   "dependencies": {
+    "bunyan": "1.2.x",
     "request": "^2.42.0",
     "MD5": "^1.0.0"
   },
   "devDependencies": {
+    "MD5": "^1.0.0",
     "chai": "^1.9.1",
     "chai-as-promised": "^4.1.1",
-    "MD5": "^1.0.0",
+    "grunt-jsdoc": "^0.5.7",
+    "grunt-mocha-test": "^0.12.4",
     "mocha": "^1.21.4",
     "request": "^2.42.0",
     "sinon": "^1.10.3"

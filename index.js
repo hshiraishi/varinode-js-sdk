@@ -14,8 +14,8 @@
  * under the License.
  */
 
-var VarinodeApi = require('src/api.js');
-var ApiCache = require('src/api.cache.js');
+var VarinodeApi = require('./src/api.js');
+var ApiCache = require('./src/api.cache.js');
 
 var Varinode = {
     /**
@@ -74,5 +74,12 @@ var Varinode = {
 };
 
 Varinode.ApiCache = ApiCache;
+Varinode.Product = require('./src/Product.js');
+Varinode.Cart = require('./src/Cart.js');
+Varinode.Order = require('./src/Order.js');
+Varinode.Customer = require('./src/Customer.js');
+Varinode.Card = require('./src/Card.js');
+Varinode.Address = require('./src/Address.js');
+Varinode.Site = require('./src/Site.js');
 
 module.exports = Varinode;
