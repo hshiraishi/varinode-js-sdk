@@ -7,6 +7,9 @@ module.exports = function(grunt) {
                   options: {
                       reporter: 'spec'
                   },
+                  /* N.B. These aren't really unit tests because they interface with the remote API.
+                   * TODO: Rename as appropriate and create mock versions.
+                   */
                   src: ['test/unit/*.js'],
               },
         },
