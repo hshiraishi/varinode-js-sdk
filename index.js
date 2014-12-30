@@ -14,8 +14,8 @@
  * under the License.
  */
 
-var VarinodeApi = require('./api.js');
-var ApiCache = require('./api.cache.js');
+var VarinodeApi = require('src/api.js');
+var ApiCache = require('src/api.cache.js');
 
 var Varinode = {
     /**
