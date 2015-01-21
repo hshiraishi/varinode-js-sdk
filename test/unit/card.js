@@ -24,6 +24,7 @@ if (apiConfig.appKey == 'your-app-key') {
 }
 
 chai.use(chaiAsPromised);
+varinode.configure(apiConfig);
 
 var TEST_CARD_ID = "";
 var TEST_BILLING_ADDRESS = fake.address;
