@@ -7,9 +7,7 @@ var should = require('chai').should(),
     log = bunyan.createLogger({name: 'varinode-orm-test'}),
     setup = require('mocha').setup,
     apiConfig = require('../config.js'),
-    varinode = require('../../index'),
-
-    Product = require('../../src/Product.js');
+    varinode = require('../../index');
 
 if (apiConfig.appKey == 'your-app-key') {
     throw new Error("To run tests, you must provide valid Varinode API keys in test/config.js");
@@ -27,12 +25,13 @@ describe('#product', function() {
               product_urls: [
                   'http://bananarepublic.gap.com/browse/product.do?cid=66299&vid=1&pid=423451022',
                   'http://bananarepublic.gap.com/browse/product.do?cid=1026198&vid=1&pid=288022002',
-                  'http://shop.nordstrom.com/s/halogen-stretch-woven-a-line-skirt-regular-petite/3627603'
+                  'http://www.gap.com/browse/product.do?cid=5231&vid=1&pid=767861362'
               ]
           }
         ).then(function(data) {
               expect(data["processed_sites"]).to.be.a('array');
               expect(data["processed_sites"].length).to.equal(2);
+              //console.log(JSON.stringify(data,null,2));
             done();
         }).done();
     });
